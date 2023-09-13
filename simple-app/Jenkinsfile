@@ -2,7 +2,7 @@ pipeline {
 agent any
 tools {nodejs "node"}
 environment {
-imageName = pkyoon/cicd-uf.
+imageName = 'pkyoon/cicd-uf'
 dockerCredentialsName='dockerhub-creds'
 dockerImage = ''
 }
