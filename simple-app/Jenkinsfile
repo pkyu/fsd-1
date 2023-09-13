@@ -22,7 +22,9 @@ steps {
 }
 stage('Test') {
 steps {
-sh 'npm test'
+    dir('simple-app'){
+        sh 'npm test'
+    }
 }
 }
 stage('Building image') {
